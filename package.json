@@ -1,0 +1,27 @@
+{
+  "name": "fcc-timestamp-microservice",
+  "version": "1.0.0",
+  "description": "This is my freeCodeCamp timestamp microservice project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azbo400/FCC-TimestampMicroservice.git"
+  },
+  "author": "Ryan A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azbo400/FCC-TimestampMicroservice/issues"
+  },
+  "homepage": "https://github.com/Azbo400/FCC-TimestampMicroservice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node":"6.9.2"
+  }
+}
