@@ -11,8 +11,7 @@ app.get('/',function(req,res){
   res.render('index');
 });
 app.get('/:date',(req,res)=>{
-  //Convert date to special types
-  var dateValue = req.params.date;
+   var dateValue = req.params.date;
   var dateFormattingOption = {
     year:'numeric',
     month:'long',
@@ -24,7 +23,7 @@ app.get('/:date',(req,res)=>{
     var unixDate = new Date(dateValue).getTime()/1000;
   }else{
     var unixDate = dateValue;
-    var natural = new Date(dateValue * 1000).toLocaleDateString('en-us',dateFormattingOption);
+    var naturalDate = new Date(dateValue * 1000).toLocaleDateString('en-us',dateFormattingOption);
   }
   res.json({unix:unixDate,natural:naturalDate});
 });
